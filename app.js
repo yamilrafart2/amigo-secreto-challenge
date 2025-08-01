@@ -40,3 +40,21 @@ function actualizarLista() {
     });
     return;
 }
+
+/*
+    Función que selecciona de manera aleatoria uno de los nombres almacenados en el array amigos.
+    *   Tareas específicas:
+        -   Valida que haya amigos disponibles: Antes de sortear, comprueba si el array amigos no está vacío.
+        -   Genera un índice aleatorio.
+        -   Obtiene el nombre sorteado: Utiliza el índice aleatorio para acceder al nombre correspondiente en el arreglo.
+        -   Muestra el resultado.
+*/
+function sortearAmigo() {
+    if (nombreAmigos.length == 0) {
+        alert('No existen amigos para sortear. Por favor, ingrese nombre de amigos!')
+    } else {
+        let indiceAleatorio = Math.floor(Math.random() * (nombreAmigos.length));
+        let nombreSorteado = nombreAmigos[indiceAleatorio];
+        document.getElementById('resultado').innerHTML = nombreSorteado;
+    }
+}
