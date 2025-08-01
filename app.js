@@ -12,11 +12,12 @@ let nombreAmigos = [];
         -   Limpia el campo de entrada: Después de añadir el nombre, restablece el campo de texto a una cadena vacía.
 */
 function agregarAmigo() {
-    if (document.getElementById('amigo').value == '') {
+    let elementoInput = document.getElementById('amigo');
+    if (elementoInput.value == '') {
         alert('Por favor, inserte un nombre.')
     } else {
-        nombreAmigos.push(document.getElementById('amigo').value);
-        document.getElementById('amigo').value = '';
+        nombreAmigos.push(elementoInput.value);
+        elementoInput.value = '';
         actualizarLista();
     }
     return;
@@ -57,4 +58,5 @@ function sortearAmigo() {
         let nombreSorteado = nombreAmigos[indiceAleatorio];
         document.getElementById('resultado').innerHTML = nombreSorteado;
     }
+    return;
 }
