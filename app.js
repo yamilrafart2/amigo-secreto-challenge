@@ -16,9 +16,13 @@ function agregarAmigo() {
     if (elementoInput.value == '') {
         alert('Por favor, inserte un nombre.')
     } else {
-        nombreAmigos.push(elementoInput.value);
-        elementoInput.value = '';
-        actualizarLista();
+        if (nombreAmigos.includes(elementoInput.value)) {
+            alert('El nombre ya fue ingresado. Por favor, ingrese un nuevo nombre!')
+        } else {
+            nombreAmigos.push(elementoInput.value);
+            elementoInput.value = '';
+            actualizarLista();
+        }
     }
     return;
 }
