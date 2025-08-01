@@ -30,7 +30,7 @@ Permite ingresar nombres, mostrarlos en una lista y sortear aleatoriamente uno d
 
 ### Ingresando mediane la URL
 
-- 🔗: [Amigo Secreto](https://github.com/yamilrafart2)
+- 🔗: [Amigo Secreto](https://yamilrafart2.github.io/amigo-secreto-challenge/)
 
 ### Clonando el repositorio
 
