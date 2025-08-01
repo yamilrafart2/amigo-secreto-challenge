@@ -17,7 +17,7 @@ function agregarAmigo() {
         alert('Por favor, inserte un nombre.')
     } else {
         if (nombreAmigos.includes(elementoInput.value)) {
-            alert('El nombre ya fue ingresado. Por favor, ingrese un nuevo nombre!')
+            alert(`El nombre ${elementoInput.value} ya fue ingresado. Por favor, ingrese un nuevo nombre!`)
         } else {
             nombreAmigos.push(elementoInput.value);
             elementoInput.value = '';
